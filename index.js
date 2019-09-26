@@ -3,6 +3,13 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
 
+
+//adding modules
+const categories = require('./models/categories.js');
+const catSch = require('./models/categories-schema.js');
+const products = require('./models/products.js');
+const proSch = require('./models/products-schema.js');
+
 const mongooseOptions = {
   useNewUrlParser:true,
   useCreateIndex: true,
